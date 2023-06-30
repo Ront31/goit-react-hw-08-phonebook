@@ -14,11 +14,19 @@ export const FilterLabel = styled.label`
 `;
 
 export const FilterInput = styled.input`
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem auto 1rem;
-  align-items: center;
-  font-size: large;
-  text-align: left;
-  padding: 0.5rem 15rem 0.5rem 1rem;
+  width: 20vw;
+  height: 24px;
+  margin: 20px auto;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  outline: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #212121;
+  transition: all cubic-bezier(0.25s, 0.7, 0.98, 0.86) 0s;
+  &:focus {
+    outline: 2px solid #d4dae3;
+    border-radius: 5px;
+  }
 `;

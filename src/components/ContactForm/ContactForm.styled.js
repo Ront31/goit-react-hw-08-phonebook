@@ -7,26 +7,27 @@ export const AddContactForm = styled(Form)`
 `;
 
 export const Label = styled.label`
-  text-align: center;
-  color: #353535;
-  font-size: 24px;
-  font-weight: 600;
-  font-family: 'Cormorant Garamond', serif;
-  margin-bottom: 20px;
   display: flex;
+  align-items: center;
+  justify-items: center;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
+  margin: 1rem auto;
+  align-items: center;
+  font-size: large;
+  text-align: left;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 `;
 
 export const Input = styled(Field)`
   display: flex;
+  align-items: center;
+  justify-items: center;
   flex-direction: column;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   align-items: center;
   font-size: large;
   text-align: left;
-  padding: 0.5rem 15rem 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 `;
 
 export const AddButton = styled.button`
@@ -48,7 +49,7 @@ export const AddButton = styled.button`
   color: white;
   cursor: pointer;
   &:hover {
-    cbackground-color: rgba(23, 26, 32, 1);
+    background-color: rgba(23, 26, 32, 1);
     cursor: pointer;
   }
 `;

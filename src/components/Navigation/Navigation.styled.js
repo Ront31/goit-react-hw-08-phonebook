@@ -1,24 +1,9 @@
+import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-export const ListItem = styled.li`
-  text-align: center;
-  color: #353535;
-  font-size: 22px;
-  font-weight: 600;
-  font-family: 'Cormorant Garamond', serif;
-  margin-bottom: 2px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  &:last-child {
-    margin-bottom: 0;
-  }
-`;
-
-export const DeleteButton = styled.button`
-  outline: none;
-  padding: 8px 20px;
-  background: transparent;
+export const NavigationLink = styled(NavLink)`
+  padding: 10px 25px;
+  background-color: #e6e3dc;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
@@ -26,10 +11,13 @@ export const DeleteButton = styled.button`
   font-size: 22px;
   font-weight: 600;
   font-family: 'Cormorant Garamond', serif;
-  border: 1px solid #d4dae3;
+  text-decoration: none;
   border-radius: 4px;
   z-index: 1;
   position: relative;
+  margin-right: 10px;
+  box-shadow: -10px -10px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   &:after {
     position: absolute;
     content: '';
@@ -50,4 +38,8 @@ export const DeleteButton = styled.button`
     top: 0;
     height: 100%;
   }
+`;
+
+export const NavigationMenu = styled.nav`
+  padding: 12px;
 `;
